@@ -30,7 +30,7 @@ export default function ToolDetailPage() {
         Back to tools
       </Link>
 
-      <section className={styles.hero}>
+      <div className={styles.hero}>
         <div className={styles.content}>
           <span className={styles.eyebrow}>{tool.category}</span>
           <h1>{tool.name}</h1>
@@ -61,9 +61,9 @@ export default function ToolDetailPage() {
             <GenericToolDetail tool={tool} />
           )}
         </div>
-      </section>
+      </div>
 
-      <section className={styles.detailsGrid}>
+      <div className={styles.detailsGrid}>
         <div className={styles.mainCard}>
           <h2>What this tool gives you</h2>
           <ul className={styles.featureList}>
@@ -76,15 +76,15 @@ export default function ToolDetailPage() {
           </ul>
         </div>
 
-        <aside className={styles.sideCard}>
+        <div className={styles.sideCard}>
           <h3>Why use it</h3>
           <ul className={styles.summaryList}>
             <li>Fast output</li>
             <li>Production-ready styling</li>
             <li>Easy front-end experimentation</li>
           </ul>
-        </aside>
-      </section>
+        </div>
+      </div>
     </div>
   );
 }

@@ -11,15 +11,15 @@ import images from '../data/images';
 export default function ToolsPage() {
   return (
     <div className={styles.pageShell}>
-      <section className={styles.pageHero}>
+      <div className={styles.pageHero}>
         <span className={styles.eyebrow}>Library</span>
         <h1>All tools</h1>
         <p>Explore utilities that are useful in everyday work.</p>
-      </section>
+      </div>
 
-      <section className={styles.toolGrid}>
+      <div className={styles.toolGrid}>
         {tools.map(tool => (
-          <article key={tool.id} className={styles.toolCard}>
+          <div key={tool.id} className={styles.toolCard}>
             <div className={styles.preview}>
               <ToolPreviewWrapper>
                 {tool.slug === 'gradient-generator' ? (
@@ -43,9 +43,9 @@ export default function ToolsPage() {
                 </Link>
               </div>
             </div>
-          </article>
+          </div>
         ))}
-      </section>
+      </div>
     </div>
   );
 }

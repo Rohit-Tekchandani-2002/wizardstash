@@ -10,7 +10,7 @@ export default function HomePage() {
 
   return (
     <>
-      <section className={styles.hero}>
+      <div className={styles.hero}>
         <div className={styles.heroCopy}>
           <span className={styles.eyebrow}>Generators</span>
           <h1>Build cleaner interfaces with better tools.</h1>
@@ -64,9 +64,9 @@ export default function HomePage() {
             <div className={styles.loaderPreview} />
           </div>
         </div>
-      </section>
+      </div>
 
-      <section className={styles.sectionBlock}>
+      <div className={styles.sectionBlock}>
         <div className={styles.sectionHead}>
           <div>
             <span className={`${styles.eyebrow} ${styles.light}`}>Popular generators</span>
@@ -79,19 +79,19 @@ export default function HomePage() {
 
         <div className={styles.toolGrid}>
           {featuredTools.map(tool => (
-            <article key={tool.id} className={styles.toolCard}>
+            <div key={tool.id} className={styles.toolCard}>
               <div className={`${styles.toolPreview} ${styles[`${tool.accent}Preview`]}`} />
               <div className={styles.cardBody}>
                 <span className={styles.tag}>{tool.category}</span>
                 <h3>{tool.name}</h3>
                 <p>{tool.description}</p>
               </div>
-            </article>
+            </div>
           ))}
         </div>
-      </section>
+      </div>
 
-      <section className={styles.sectionBlock}>
+      <div className={styles.sectionBlock}>
         <div className={styles.sectionHead}>
           <div>
             <span className={`${styles.eyebrow} ${styles.light}`}>Why this works</span>
@@ -100,20 +100,20 @@ export default function HomePage() {
         </div>
 
         <div className={styles.infoGrid}>
-          <article className={styles.infoCard}>
+          <div className={styles.infoCard}>
             <h3>Clearer structure</h3>
             <p>Every generator is grouped by real use case instead of generic link lists.</p>
-          </article>
-          <article className={styles.infoCard}>
+          </div>
+          <div className={styles.infoCard}>
             <h3>Better scanning</h3>
             <p>Users can compare loaders, gradients, and shapes in a single glance.</p>
-          </article>
-          <article className={styles.infoCard}>
+          </div>
+          <div className={styles.infoCard}>
             <h3>More trust</h3>
             <p>The tools feel practical, relevant, and immediately usable in real product work.</p>
-          </article>
+          </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }

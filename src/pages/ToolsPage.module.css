@@ -169,6 +169,12 @@
   font-weight: 700;
 }
 
+.preview img {
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+
 @media (max-width: 900px) {
   .toolGrid {
     grid-template-columns: 1fr;

@@ -13,10 +13,7 @@ export default function ToolsPage() {
       <section className={styles.pageHero}>
         <span className={styles.eyebrow}>Library</span>
         <h1>All tools</h1>
-        <p>
-          Explore layouts, properties, gradients, shadows, and motion utilities that are useful in
-          everyday UI work.
-        </p>
+        <p>Explore utilities that are useful in everyday work.</p>
       </section>
 
       <section className={styles.toolGrid}>
@@ -29,8 +26,9 @@ export default function ToolsPage() {
                 ) : tool.slug === 'loader-generator' ? (
                   <LoaderMini />
                 ) : (
-                  <div className={styles[`${tool.accent}Preview`]} />
+                  <div className={styles[`${tool.accent}Preview`]}></div>
                 )}
+                <img src={tool.iconImage} alt={tool.name} />
               </ToolPreviewWrapper>
             </div>
             <div className={styles.body}>

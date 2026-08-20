@@ -45,3 +45,7 @@ Tools should:
 - Increase template discovery through clean taxonomy and SEO pages
 - Clarify product value better than competitor sites that feel generic or overloaded
 - Convert browsing into clicks via clear category and CTA patterns
+
+## Getting icons
+
+Adding SVG icons from: https://icon-sets.iconify.design/

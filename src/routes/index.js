@@ -13,6 +13,7 @@ export default function AppRoutes() {
         <Route path="/" element={<Navigate to="/tools/image-generator" replace />} />
         {/* Temp changed default path to work on image generator tool */}
         {/* <Route path="/" element={<Navigate to="/tools" replace />} /> */}
+        <Route path="/home" element={<HomePage />} />
         <Route path="/tools" element={<ToolsPage />} />
         <Route path="/tools/:slug" element={<ToolDetailPage />} />
         <Route path="/categories" element={<CategoriesPage />} />

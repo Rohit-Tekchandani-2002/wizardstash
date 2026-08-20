@@ -13,6 +13,13 @@ export default function Layout() {
           </NavLink>
           <nav className={styles.nav} aria-label="Main navigation">
             <NavLink
+              to="/home"
+              className={({isActive}) =>
+                isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+              }>
+              Home
+            </NavLink>
+            <NavLink
               to="/tools"
               className={({isActive}) =>
                 isActive ? `${styles.navLink} ${styles.active}` : styles.navLink

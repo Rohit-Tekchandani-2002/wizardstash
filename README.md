@@ -10,12 +10,12 @@ Date:- 20/08/2026
 
 To do:-
 
-Remove navigation icon on card preview and preview screens
+R&D how can we implement Image generator
 Remove Extra code
 Clear the code
 Add lodash in entire project
-R&D how can we implement Image generator
 
 Done:-
 
 Add icons to card
+Fix icons UI in portal

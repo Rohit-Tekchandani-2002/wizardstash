@@ -52,7 +52,6 @@ export default function HomePage() {
           </div>
 
           <div className={styles.surface}>
-            <div className={styles.loaderPreview} />
             <div className={styles.stackRow}>
               <div className={`${styles.miniCard} ${styles.gradientCard}`} />
               <div className={`${styles.miniCard} ${styles.shadowCard}`} />
@@ -62,6 +61,7 @@ export default function HomePage() {
               <span />
               <span />
             </div>
+            <div className={styles.loaderPreview} />
           </div>
         </div>
       </section>

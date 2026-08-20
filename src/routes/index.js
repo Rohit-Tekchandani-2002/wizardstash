@@ -10,7 +10,9 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path="/" element={<Navigate to="/tools" replace />} />
+        <Route path="/" element={<Navigate to="/tools/image-generator" replace />} />
+        {/* Temp changed default path to work on image generator tool */}
+        {/* <Route path="/" element={<Navigate to="/tools" replace />} /> */}
         <Route path="/tools" element={<ToolsPage />} />
         <Route path="/tools/:slug" element={<ToolDetailPage />} />
         <Route path="/categories" element={<CategoriesPage />} />

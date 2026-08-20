@@ -6,6 +6,7 @@ import GradientMini from '../components/GradientMini';
 import LoaderMini from '../components/LoaderMini';
 import ToolPreviewWrapper from '../components/ToolPreviewWrapper';
 import previewConfig from '../configs/previewConfig.json';
+import images from '../data/images';
 
 export default function ToolsPage() {
   return (
@@ -37,7 +38,9 @@ export default function ToolsPage() {
               <p>{tool.description}</p>
               <div className={styles.metaRow}>
                 <span>{tool.difficulty}</span>
-                <Link to={`/tools/${tool.slug}`}>View tool →</Link>
+                <Link className={styles.viewToolLink} to={`/tools/${tool.slug}`}>
+                  View tool
+                </Link>
               </div>
             </div>
           </article>

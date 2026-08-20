@@ -7,6 +7,7 @@ import LoaderGenerator from '../components/LoaderGenerator';
 import ClipPathGenerator from '../components/ClipPathGenerator';
 import GenericToolDetail from '../components/GenericToolDetail';
 import previewConfig from '../configs/previewConfig.json';
+import images from '../data/images';
 
 export default function ToolDetailPage() {
   const {slug} = useParams();
@@ -26,7 +27,7 @@ export default function ToolDetailPage() {
   return (
     <div className={styles.wrapper}>
       <Link to="/tools" className={styles.backLink}>
-        ← Back to tools
+        Back to tools
       </Link>
 
       <section className={styles.hero}>
@@ -68,7 +69,7 @@ export default function ToolDetailPage() {
           <ul className={styles.featureList}>
             {tool.features.map(feature => (
               <li key={feature}>
-                <span className={styles.check}>✓</span>
+                <span className={styles.check}>✅</span>
                 <span>{feature}</span>
               </li>
             ))}

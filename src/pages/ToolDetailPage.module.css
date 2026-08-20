@@ -201,28 +201,21 @@
 .summaryList li {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 4px;
   color: var(--muted);
   line-height: 1.75;
   margin-bottom: 12px;
 }
 
 .check {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: #dcfce7;
-  color: #15803d;
-  display: inline-grid;
-  place-items: center;
-  font-weight: 700;
-  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .summaryList li::before {
   content: '•';
   color: var(--accent-deep);
-  font-size: 1.4rem;
+  font-size: 24px;
   line-height: 1;
 }
 

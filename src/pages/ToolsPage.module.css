@@ -175,6 +175,17 @@
   z-index: 1;
 }
 
+.viewToolLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.viewToolLink img {
+  width: 12px;
+  height: 12px;
+}
+
 @media (max-width: 900px) {
   .toolGrid {
     grid-template-columns: 1fr;

@@ -1,0 +1,21 @@
+{
+  "gradient-generator": {
+    "type": "gradient",
+    "preset": "default",
+    "style": {}
+  },
+  "loader-generator": {
+    "type": "loader",
+    "preset": "default",
+    "style": {}
+  },
+  "flexbox-layout": {
+    "type": "layout",
+    "preset": "row-center",
+    "style": {}
+  },
+  "default": {
+    "type": "accent",
+    "style": {}
+  }
+}

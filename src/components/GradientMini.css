@@ -1,0 +1,27 @@
+.gm-root {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+}
+.gm-preview {
+  height: 72px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+.gm-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.gm-color {
+  width: 36px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 0;
+}
+.gm-range {
+  flex: 1;
+  height: 28px;
+}

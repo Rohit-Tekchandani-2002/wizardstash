@@ -1,0 +1,40 @@
+.gtd-root {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.gtd-desc {
+  color: var(--muted);
+}
+.gtd-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 20px;
+  align-items: start;
+}
+.gtd-preview {
+  background: linear-gradient(180deg, #fff, #f8fafc);
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+.gtd-sample {
+  height: 220px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.gtd-controls {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+.gtd-control-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

@@ -19,3 +19,4 @@ Done:-
 
 Add icons to card
 Fix icons UI in portal
+Added home screen
